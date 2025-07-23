@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Sahil Ahuja</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .contact-form-container {
+            background: linear-gradient(135deg, rgba(45, 27, 105, 0.15) 0%, rgba(15, 15, 35, 0.1) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 3rem;
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            box-shadow: 0 20px 40px rgba(138, 43, 226, 0.1);
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #e0e0ff;
+            opacity: 0.8;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            background: rgba(15, 15, 35, 0.5);
+            color: #e0e0ff;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: rgba(138, 43, 226, 0.8);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+        }
+        #form-message {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Skills">Skills</a></li>
+            <li><a href="index.html#Projects">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="logo">
+            <img src="img.jpg" alt="Profile" class="profile-pic-small">
+            <span>Sahil Ahuja</span>
+        </div>
+    </nav>
+
+    <div class="contact-section main-content">
+        <div class="contact-form-container">
+            <h1 class="section-title" style="text-align: center; margin-bottom: 2rem;">Get In Touch</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+            </form>
+            <p id="form-message"></p>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Sahil Ahuja. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/sahilahuja14" target="_blank" aria-label="GitHub"><img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub"></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank" aria-label="Twitter"><img src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
